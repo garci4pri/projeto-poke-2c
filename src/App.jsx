@@ -9,7 +9,10 @@ const App = () => {
 
   return (
     <Routes>
-       <Route path ="/" element={<Home/>} />
+        <Route index element={<Menu/>} />
+        <Route path ="home" element={<Home/>} />
+        <Route path ="pokerflex" element={<PokeFlex/>} />
+        <Route path ="pokergrig" element={<PokeGrid/>} />
     </Routes>
   )
 }
